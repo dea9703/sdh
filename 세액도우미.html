@@ -593,7 +593,7 @@ function 체크리스트그리기() {
     const 계산 = 계산글(줄.결과);
     if (계산) 내용.appendChild(요소("div", "계산", 계산));
     if (줄.결과.상태 === "정상") {
-      const 항목칸 = 요소("div", "항목", "항목: ");
+      const 항목칸 = 요소("div", "항목", "상대계정(대): ");
       항목칸.appendChild(요소("b", null, 줄.결과.항목));
       내용.appendChild(항목칸);
       내용.appendChild(매입부가세요소(줄));
